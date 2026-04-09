@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Solution202600407_2Test {
+class Solution0407_2Test {
 
-    private final Solution202600407_2 solution = new Solution202600407_2();
+    private final Solution0407_2 solution = new Solution0407_2();
     @Test
     void test1() {
         assertEquals(3, solution.solution(10));

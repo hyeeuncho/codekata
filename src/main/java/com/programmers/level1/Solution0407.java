@@ -6,7 +6,7 @@ package com.programmers.level1;
  * Level 1
  * - 두 정수 a, b를 입력받아 차를 반환
  */
-public class Solution20260407 {
+public class Solution0407 {
     public int solution(int a, int b) {
         return a - b;
     }

@@ -5,8 +5,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class Solution20260408Test {
-    private final Solution20260408 s = new Solution20260408();
+class Solution04082Test {
+    private final Solution0408_2 s = new Solution0408_2();
 
     static Stream<int[][]> testCases() {
         return Stream.of(
