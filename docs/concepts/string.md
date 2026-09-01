@@ -2,6 +2,12 @@
 
 문자열은 직접 수정할 수 없으므로 새 문자열을 만들거나 `StringBuilder`를 사용한다.
 
+필요한 import:
+
+```java
+import java.util.Arrays;
+```
+
 ## 순회
 
 ```java
@@ -51,6 +57,75 @@ if (s.length() % 2 == 0) {
 }
 return s.substring(mid, mid + 1);
 ```
+
+## 문자열 변환
+
+숫자를 문자열로 바꾸기:
+
+```java
+String s = String.valueOf(n);
+```
+
+문자열을 숫자로 바꾸기:
+
+```java
+int n = Integer.parseInt(s);
+long value = Long.parseLong(s);
+```
+
+문자열을 문자 배열로 바꾸기:
+
+```java
+char[] chars = s.toCharArray();
+```
+
+문자 배열을 문자열로 바꾸기:
+
+```java
+String result = new String(chars);
+```
+
+문자열을 한 글자씩 문자열 배열로 바꾸기:
+
+```java
+String[] arr = s.split("");
+```
+
+문자열을 특정 기준으로 나누기:
+
+```java
+String[] words = s.split(" ");
+String[] parts = s.split(",");
+```
+
+문자열 배열을 하나의 문자열로 합치기:
+
+```java
+String result = String.join("", arr);
+String csv = String.join(",", arr);
+```
+
+숫자 문자열을 숫자 배열로 바꾸기:
+
+```java
+int[] numbers = Arrays.stream(s.split(""))
+        .mapToInt(Integer::parseInt)
+        .toArray();
+```
+
+숫자를 자릿수 배열로 바꾸기:
+
+```java
+int[] digits = String.valueOf(n).chars()
+        .map(c -> c - '0')
+        .toArray();
+```
+
+주의할 점:
+
+- `"123".split("")`은 `["1", "2", "3"]`이 된다.
+- `s.charAt(i)`는 `char`를 반환한다.
+- 숫자 문자 `'7'`을 숫자 `7`로 바꾸려면 `'7' - '0'`을 쓴다.
 
 ## 숫자 문자 확인
 

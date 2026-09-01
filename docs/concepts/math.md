@@ -2,12 +2,37 @@
 
 합, 나머지, 자릿수, 약수, 최대공약수 문제에서 자주 쓰는 기본 패턴이다.
 
+필요한 import:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+```
+
 ## 자릿수 처리
 
 ```java
 int sum = 0;
 while (n > 0) {
     sum += n % 10;
+    n /= 10;
+}
+```
+
+자릿수를 배열로 만들어야 하면 문자열로 바꾸는 방식이 간단하다.
+
+```java
+int[] digits = String.valueOf(n).chars()
+        .map(c -> c - '0')
+        .toArray();
+```
+
+뒤집힌 자릿수 배열이 필요하면 나머지를 직접 담아도 된다.
+
+```java
+List<Integer> list = new ArrayList<>();
+while (n > 0) {
+    list.add((int) (n % 10));
     n /= 10;
 }
 ```
