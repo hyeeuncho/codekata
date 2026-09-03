@@ -41,6 +41,15 @@ for (int value : arr) {
 }
 ```
 
+스택처럼 쓸 때는 `ArrayDeque` 타입으로 잡는다.
+
+```java
+ArrayDeque<Integer> stack = new ArrayDeque<>();
+stack.push(1);
+stack.pop();
+stack.peek();
+```
+
 주요 메서드:
 
 | 메서드 | 의미 |
@@ -104,6 +113,25 @@ Queue<Integer> queue = new ArrayDeque<>();
 queue.offer(value);
 int first = queue.poll();
 ```
+
+큐 함수 중심으로 쓸 때는 타입을 `Queue`로 잡는 게 좋다.
+
+```java
+Queue<Integer> queue = new ArrayDeque<>();
+queue.offer(1);
+queue.poll();
+queue.peek();
+```
+
+`ArrayDeque` 타입으로 잡아도 큐 메서드를 사용할 수는 있다.
+
+```java
+ArrayDeque<Integer> queue = new ArrayDeque<>();
+queue.offer(1);
+queue.poll();
+```
+
+다만 `Queue<Integer> queue = new ArrayDeque<>();`로 쓰면 이 변수를 큐로 사용한다는 의도가 더 명확하다.
 
 주요 메서드:
 
@@ -175,6 +203,9 @@ int next = pq.peek();
 
 ## 주의할 점
 
+- `ArrayDeque`는 구현체이고, 스택/큐는 사용하는 방식이다.
+- 큐로 쓸 때는 `Queue<Integer> queue = new ArrayDeque<>();` 형태가 의도를 드러내기 좋다.
+- 스택으로 쓸 때는 `ArrayDeque<Integer> stack = new ArrayDeque<>();` 형태가 편하다.
 - `pop()`, `poll()`은 값을 꺼낸다.
 - `peek()`은 값만 확인하고 제거하지 않는다.
 - 비어 있을 때 `pop()`을 하면 예외가 날 수 있다.
