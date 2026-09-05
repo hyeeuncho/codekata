@@ -10,6 +10,7 @@
 - [숫자와 수학](docs/concepts/math.md)
 - [문자열](docs/concepts/string.md)
 - [배열과 컬렉션](docs/concepts/array-collection.md)
+- [해시](docs/concepts/hash.md)
 - [정렬](docs/concepts/sorting.md)
 - [스택과 큐](docs/concepts/stack-queue.md)
 - [스트림](docs/concepts/stream.md)
@@ -51,8 +52,9 @@
 | 2026-09-03 | [최댓값과 최솟값](src/main/java/com/programmers/level2/Solution0903_2.java) | Lv.2 | 문자열, 정렬 | N  |                          |
 | 2026-09-04 | [기능개발](src/main/java/com/programmers/level2/Solution0904.java) | Lv.2 | 큐, 구현 | Y  | 풀이 참조                    |
 | 2026-09-04 | [프로세스](src/main/java/com/programmers/level2/Solution0904_2.java) | Lv.2 | 큐, 우선순위 | Y  | 풀이 참조                    |
-| 2026-09-05 | 전화번호 목록 | Lv.2 | 해시 | Y  |                          |
-| 2026-09-05 | 의상 | Lv.2 | 해시 | Y  |                          |
+| 2026-09-05 | [전화번호 목록](src/main/java/com/programmers/level2/Solution0905.java) | Lv.2 | 해시 | Y  | 풀이 참조                    |
+| 2026-09-05 | [의상](src/main/java/com/programmers/level2/Solution0905_2.java) | Lv.2 | 해시 | Y  | 풀이 참조                    |
+| 2026-09-05 | [할인 행사](src/main/java/com/programmers/level2/Solution0905_3.java) | Lv.2 | 해시, 슬라이딩 윈도우 | Y  |                          |
 | 2026-09-06 | H-Index | Lv.2 | 정렬 | Y  |                          |
 | 2026-09-06 | 카펫 | Lv.2 | 완전탐색 | Y  |                          |
 | 2026-09-07 | 9월 1일~6일 풀이 참고 문제 다시 풀기 | - | 복습 | Y  |                          |
